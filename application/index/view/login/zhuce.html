@@ -1,0 +1,94 @@
+<!--加载头部文件-->
+{include file="public/header" /}
+
+
+<title>注册</title>
+</head>
+
+<body>
+<div class="centBox">
+	<div class="top">
+    	<span>【<a href="{:url('login/index')}">登陆管理</a> 】 【<a href="{:url('login/loginout')}">退出管理</a> 】  【<a href="{:url('trading/index')}">前往采购</a>】  【<a href="{:url('message/index')}">联系我们</a>】</span>
+    	您好！欢迎来到中江县名优产品展销平台!     您遇到任何疑问请致电：0838 -6668888   
+    </div>
+    <div class="top2">
+    	<div class="top2R">
+        	<div class="fanhui"><a href="{:url('login/index')}">返回登录</a></div>
+        </div>
+    	<div class="logo">
+        	<a href="#" class="logo_a">中江名优特产</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="denlu">
+	<div class="denlu_nei">
+    	<div class="denluL">
+        	<img src="__STATIC__/index/text/23.gif" class="pt145" />
+        </div>
+        <div class="denluR">
+		
+			
+				<div class="den_bt">
+					注册我们
+				</div>
+				
+			<form  action="{:url('login/zhuce')}" method="post">
+			
+				<div class="den_kang">
+					<table width="100%" height="155" border="0" cellspacing="0" cellpadding="0">
+					
+						  <tr >
+							<td width="30"><span class="den_span">用户名</span></td>
+							<td><input name="username" type="text"  onkeyup="value=value.replace(/[^\w\d]/g,'')" class="denl_input" value=""  placeholder="邮箱/会员账号"/></td>
+						  </tr>
+						  
+						  
+						  <tr>
+							<td height="30"><span class="den_span">密&nbsp;&nbsp;&nbsp;&nbsp;码</span></td>
+							<td><input name="password" type="password" class="denl_input" placeholder="密码"/>
+							</td>
+						  </tr>
+						  
+						  
+						   <tr>
+							<td height="30"><span class="den_span">再次确认密码</span></td>
+							<td><input name="password1" type="password" class="denl_input" placeholder="再次确认密码"/>
+							</td>
+						  </tr>
+					
+					
+						  <tr>
+							<td height="35"><span class="den_span">验证码</span></td>
+							<td><input name="code" type="text" class="denl_input" placeholder="验证码" style="width:100px;"/>
+							</td>
+							<td><img src="{:captcha_src()}" alt="captcha" onclick="this.src=this.src+'?'+Math.random()" style="width:100px;height:30px;position:relative;left:-100px;"/>
+							</td>
+						  </tr>
+						  
+					</table>
+
+				</div>
+				<div class="deng_ann">
+				
+					<input name="" type="submit"  class="deng_aa" value="注册"/>
+					
+				</div>
+				
+				
+				
+			</form>	
+			
+        </div>
+		
+    </div>
+</div>
+
+
+
+<!--加载脚部文件-->
+{include file="public/footer" /}
